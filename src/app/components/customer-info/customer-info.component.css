@@ -1,0 +1,31 @@
+.customer-info-class {
+  margin: 16px 0;
+}
+.customer-info-class .customer-info{
+  font-weight: 400;
+  font-size: 14px;
+  color: #6B7280;
+  margin-bottom: 8px;
+}
+.customer-info-class .customer-info-value{
+  font-weight: 400;
+  font-size: 14px;
+  color: #1C1C28;
+  margin-top: 8px;
+}
+.customer-info-containerInAr {
+  margin: 10px 0;
+  border-left: 1px solid #E4E4E4;
+  padding: 0 10px;
+}
+.customer-info-containerInEn {
+  margin: 10px 0;
+  border-right: 1px solid #E4E4E4;
+  padding: 0 10px;
+}
+
+
+
+
+
+

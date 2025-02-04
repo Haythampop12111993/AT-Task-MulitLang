@@ -1,0 +1,126 @@
+<div style="overflow: auto;" class="customer-table ">
+  <div style="min-width: 1200px;">
+    <div class="">
+      <!-- <table class="table  table-hover">
+        <thead >
+          <tr>
+            @for(th of tHead;track $index){
+              @if(th == "customerTable.customerTableHeader.customerName" || th == "customerTable.customerTableHeader.responsibleName"){
+                <th style="width: 250px;" class="th-class">
+                  {{th | translate}}
+                </th>
+              }@else {
+                <th class="th-class">
+                  {{th | translate}}
+                </th>
+              }
+            }
+          </tr>
+        </thead>
+        <tbody>
+          @for(customer of customersData;track $index){
+            <tr class="tB-tr-class">
+              @if(lang == "ar"){
+                <td style="height: 50px;" class="d-flex justify-content-start align-items-center gap-2">
+                  <img style="width: 26px; height: 26px; border-radius: 50%;" [src]="customer.companyImage" alt="companyImage">
+                  <p class="truncate-text mb-0">{{customer.nameCompanyInArabic}}</p>
+                </td>
+              }@else {
+                <td style="height: 50px;"  class="d-flex justify-content-start align-items-center gap-2">
+                  <img style="width: 26px; height: 26px; border-radius: 50%;" [src]="customer.companyImage" alt="companyImage">
+                  <p class="truncate-text mb-0">{{customer.nameCompanyInEnglish}}</p>
+                </td>
+              }
+              <td >{{customer.appointmentDate | date: 'dd/MM/yyyy'}}</td>
+              <td >{{customer.endAppointmentDate | date: 'dd/MM/yyyy'}}</td>
+              @if(lang == "ar"){
+                <td >
+                  <p class="truncate-text mb-0">{{customer.responsibleNameForAppointmentInArabic}}</p>
+                </td>
+              }@else {
+                <td  >
+                  <p class="truncate-text mb-0">{{customer.responsibleNameForAppointmentInEnglish}}</p>
+                </td>
+              }
+              <td>{{customer.localMinutes}}</td>
+              <td>{{customer.internationalMinutes}}</td>
+              @if (lang == "ar") {
+                <td>{{ customer.amount | currency: 'EGP' :  "م.ج"  }}</td>
+              }@else {
+                <td>{{customer.amount | currency: 'EGP' }}</td>
+              }
+            </tr>
+
+          }
+        </tbody>
+      </table> -->
+      <div class="t-header row text-center">
+        @for(th of tHead;track $index){
+          @if(th == "customerTable.customerTableHeader.customerName" || th == "customerTable.customerTableHeader.responsibleName"){
+            @if (th == "customerTable.customerTableHeader.customerName" && lang == "ar") {
+              <div  class="th-class col-2 flex-fill text-end ">
+                {{th | translate}}
+              </div>
+            }@else if (th == "customerTable.customerTableHeader.customerName" && lang == "en") {
+              <div  class="th-class col-2 flex-fill text-start ">
+                {{th | translate}}
+              </div>
+            }
+            @else {
+              <div  class="th-class col-2 flex-fill ">
+                {{th | translate}}
+              </div>
+            }
+          }@else if (th == "customerTable.customerTableHeader.appointmentDate" || th == "customerTable.customerTableHeader.endAppointmentDate" ) {
+            <div class="th-class col-2  ">
+              {{th | translate}}
+            </div>
+          }@else {
+            <div class="th-class col-1">
+              {{th | translate}}
+            </div>
+          }
+        }
+
+      </div>
+      <div  class="">
+        @for(customer of customersData;track $index){
+          <div (click)="selectCustomer(customer)"  class="tB-tr-class row align-items-center t-body ">
+            @if(lang == "ar"){
+              <div style="height: 50px;" class=" col-2 flex-fill d-flex justify-content-start align-items-center gap-2">
+                <img style="width: 26px; height: 26px; border-radius: 50%;" [src]="customer.companyImage" alt="companyImage">
+                <p class="truncate-text mb-0">{{customer.nameCompanyInArabic}}</p>
+              </div>
+            }@else {
+              <div style="height: 50px;"  class=" col-2 flex-fill  d-flex justify-content-start align-items-center gap-2">
+                <img style="width: 26px; height: 26px; border-radius: 50%;" [src]="customer.companyImage" alt="companyImage">
+                <p class="truncate-text mb-0">{{customer.nameCompanyInEnglish}}</p>
+              </div>
+            }
+            <div  class="col-2" >{{customer.appointmentDate | date: 'dd/MM/yyyy'}}</div>
+            <div  class="col-2">{{customer.endAppointmentDate | date: 'dd/MM/yyyy'}}</div>
+            @if(lang == "ar"){
+              <div class="col-2 flex-fill " >
+                <div class=" text-center mb-0 ">{{customer.responsibleNameForAppointmentInArabic}}</div>
+              </div>
+            }@else {
+              <div class="col-2 flex-fill"  >
+                <p class=" text-center mb-0">{{customer.responsibleNameForAppointmentInEnglish}}</p>
+              </div>
+            }
+            <div class="col-1">{{customer.localMinutes}}</div>
+            <div class="col-1">{{customer.internationalMinutes}}</div>
+            @if (lang == "ar") {
+              <div class="col-1">{{ customer.amount | currency: 'EGP' :  "م.ج"  }}</div>
+            }@else {
+              <div class="col-1">{{customer.amount | currency: 'EGP' }}</div>
+            }
+          </div>
+
+        }
+      </div>
+    </div>
+    <app-paginator></app-paginator>
+  </div>
+
+</div>

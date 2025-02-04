@@ -1,0 +1,34 @@
+<div class="customer-info-class">
+  <div class=" row ">
+    @for(info of customerInfoArray; track $index){
+      <div  [class]="lang == 'ar' ?'col-sm-6  col-lg-3 text-center customer-info-containerInAr':'col-sm-6  col-lg-3 text-center customer-info-containerInEn' ">
+        <div class="customer-info">{{'customerInformation.' + info.name| translate}} </div>
+        <!-- <div class="customer-info-value">{{getTranslatedInfo(info) | date | currency }} </div> -->
+        @if(getTranslatedInfo(info) == customer.dateOfLastShipment){
+          <div class="customer-info-value">{{getTranslatedInfo(info) | date  : 'dd/MM/yyyy' }} </div>
+        }@else if (getTranslatedInfo(info) == customer.countryNameInArabic || getTranslatedInfo(info) == customer.countryNameInEnglish) {
+          <div  class="customer-info-value d-flex align-items-center justify-content-center gap-2"><img style="width: 21px; height: 21px;" [src]="customer.countryImage" alt="Image">
+            <div class="">
+              {{getTranslatedInfo(info) }}
+            </div>
+            </div>
+        }@else if (getTranslatedInfo(info) == customer.nameCompanyInArabic || getTranslatedInfo(info) == customer.nameCompanyInEnglish) {
+          <div  class="customer-info-value d-flex align-items-center justify-content-center gap-2 "><img style="width: 21px; height: 21px;" [src]="customer.companyImage" alt="Image">
+            <div class="truncate-text">
+              {{getTranslatedInfo(info) }}
+            </div>
+            </div>
+        }@else if (typeof getTranslatedInfo(info) == 'number') {
+          @if(lang == 'en') {
+            <div class="customer-info-value">{{getTranslatedInfo(info)  | currency : "EGP" }} </div>
+          }@else {
+            <div class="customer-info-value">{{getTranslatedInfo(info) | currency : 'EGP'  : "م.ج" }} </div>
+          }
+        }@else {
+          <div class="customer-info-value">{{getTranslatedInfo(info) }} </div>
+        }
+     </div>
+
+    }
+  </div>
+</div>

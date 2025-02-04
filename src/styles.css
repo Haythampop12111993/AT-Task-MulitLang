@@ -1,1 +1,185 @@
-/* You can add global styles to this file, and also import other style files */
+/* // Add Font NotoSansArabic */
+@font-face {
+  font-family: 'NotoSansArabic';
+  src: url('/assets/fonts/NotoSansArabic-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansArabic';
+  src: url('/assets/fonts/NotoSansArabic-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansArabic';
+  src: url('/assets/fonts/NotoSansArabic-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansArabic';
+  src: url('/assets/fonts/NotoSansArabic-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansArabic';
+  src: url('/assets/fonts/NotoSansArabic-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansArabic';
+  src: url('/assets/fonts/NotoSansArabic-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansArabic';
+  src: url('/assets/fonts/NotoSansArabic-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansArabic';
+  src: url('/assets/fonts/NotoSansArabic-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansArabic';
+  src: url('/assets/fonts/NotoSansArabic-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'NotoSansArabic', sans-serif !important;
+  background-color: #F8F8F8;
+
+}
+
+.mat-mdc-menu-content {
+  background-color: #FFFFFF !important;
+
+}
+.mat-mdc-menu-content, .mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text{
+  font-family: "NotoSansArabic", sans-serif !important;
+}
+/* // // truncate text */
+.truncate-text{
+  width: 163px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+.truncate-text:hover {
+  white-space: normal;
+  overflow: visible;
+  width: auto;
+}
+/* // Media */
+
+
+
+@media only screen and (min-width: 1355px) {
+  .customer-info-containerInAr:nth-child(4n) {
+    border-left: none !important;
+  }
+  .customer-info-containerInEn:nth-child(4n){
+    border-right: none !important;
+  }
+  .t-header{
+    font-size: 14px !important;
+  }
+  .t-body{
+    font-size: 14px !important;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1354px) {
+  .customer-info-containerInAr:nth-child(4n) {
+    border-left: none !important;
+  }
+  .customer-info-containerInEn:nth-child(4n){
+    border-right: none !important;
+  }
+  .t-header{
+    font-size: 12px !important;
+  }
+  .t-body{
+    font-size: 12px !important;
+  }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 1023px) {
+  .customer-info-containerInAr:nth-child(2n) {
+    border-left: none !important;
+  }
+  .customer-info-containerInEn:nth-child(2n) {
+    border-left: none !important;
+  }
+  .t-header{
+    font-size: 12px !important;
+  }
+  .t-body{
+    font-size: 12px !important;
+  }
+  .text-up {
+    font-size: 11px !important;
+  }
+  .text-down {
+  font-size: 11px !important;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .customer-info-containerInAr,.customer-info-containerInEn {
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid #E4E4E4;
+    padding-bottom: 10px;
+  }
+  .customer-info-containerInAr:last-child , .customer-info-containerInEn:last-child {
+    border-bottom: none !important;
+  }
+  .t-header{
+    padding:5px;
+    font-weight: 400;
+    font-size: 12px !important;
+    color: #6B7280;
+  }
+  .t-body{
+    font-size: 12px !important;
+
+  }
+  .customer-number-class .number{
+    font-size:16px !important;
+  }
+  .customer-number-class .is-used-class{
+    font-size:10px !important;
+    padding:4px 12px !important;
+  }
+  .number-icon-class p{
+    font-size:16px !important;
+
+  }
+  .mat-mdc-menu-content, .mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text{
+    font-size: 12px !important;
+  }
+  .text-up {
+    font-size: 10px !important;
+  }
+  .text-down {
+  font-size: 9px !important;
+  }
+}

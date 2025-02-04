@@ -1,0 +1,49 @@
+.allP-class {
+  font-weight: 500;
+  font-size: 11px;
+  color: #333333;
+}
+.icon-number {
+  padding: 7px 8px;
+  border: 1px solid #EFEFEF;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.left-arrow{
+color: #6B7280;
+cursor: pointer;
+}
+
+
+
+.right-arrow{
+  color: #c3c5ca;
+  cursor: pointer;
+}
+.not-selected-number{
+  width: 27px;
+  height: 27px;
+  border-radius: 4px;
+  padding: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #7E8299;
+  cursor: pointer;
+  border: 1px solid transparent;
+
+}
+:hover.not-selected-number{
+  border-color: #7E8299;
+}
+.page-select-number {
+  width: 27px;
+  height: 27px;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: #3E97FF;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}

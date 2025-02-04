@@ -1,0 +1,35 @@
+/* // customer-table */
+.customer-table {
+  background-color: #FFFFFF;
+  border: 1px solid #ECF0F5;
+  border-radius: 6px;
+  padding: 12px;
+  margin: 8px;
+}
+.t-header{
+  height: 40px;
+  border-radius: 6px;
+  border-bottom: 1px solid #F4F5F7 ;
+  background-color: #F4F5F7;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 13px;
+  color: #6B7280;
+  margin: 8px 0;
+}
+.t-body{
+  background-color: #FFFFFF;
+  height: 50px;
+  border-radius: 6px;
+  border: 0.75px solid #0000001A;
+  margin: 8px 0;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  transition: 0.2s all ease-in;
+
+}
+:hover.t-body{
+  cursor: pointer;
+  background-color: #F4F5F7;
+}

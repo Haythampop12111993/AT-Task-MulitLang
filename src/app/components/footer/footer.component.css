@@ -1,0 +1,23 @@
+.footer-section{
+  background-color: #FFFFFF;
+  border: 1px solid #ECF0F5;
+  border-radius: 6px;
+  margin: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+
+}
+.text-up {
+  font-weight: 400;
+  font-size: 12px;
+  align-items: right;
+  color: #6B7280;
+}
+.text-down {
+  font-weight: 400;
+  font-size: 13px;
+  align-items: right;
+  color: #1C1C28;
+}

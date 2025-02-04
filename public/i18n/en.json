@@ -1,0 +1,56 @@
+{
+  "number": "Show Number",
+  "isUsed": "Is Used",
+  "editNumber": "Edit Number",
+  "cancelAppointment": "Cancel Appointment",
+  "customerInformation":{
+    "protocol": "Protocol Name",
+    "protocolName":"protocolNameInEnglish",
+    "country": "Country",
+    "countryName":"countryNameInEnglish",
+    "customer": "Current Customer",
+    "companyName":"nameCompanyInEnglish",
+    "numberOfSupplies":"Number Of Supplies",
+    "numberOfSuppliesValue":"numberOfSupplies",
+    "dateOfLastShipment":"Date Of Last Shipment",
+    "dateOfLastShipmentValue":"dateOfLastShipment",
+    "currentBalance":"Current Balance",
+    "currentBalanceValue":"currentBalance",
+    "balanceUsed":"Balance Used",
+    "balanceUsedValue":"balanceUsed",
+    "allBalanceUsed":"All Balance Used",
+    "allBalanceUsedValue":"allBalanceUsed"
+
+
+  },
+  "customerTable": {
+    "customerTableHeader":{
+      "customerName":"Customer Name",
+      "appointmentDate":"Appointment Date",
+      "endAppointmentDate":"End Appointment Date",
+      "responsibleName":"Responsible Name",
+      "localMinutes":"Local Minutes",
+      "internationalMinutes":"Intern Min",
+      "amount":"Amount"
+    },
+    "customerTableBody":{
+      "customerName":"nameCompanyInEnglish",
+      "responsibleName":"responsibleNameForAppointmentInEnglish"
+    }
+  },
+
+    "paginator":{
+      "show":"Show",
+      "from":"From"
+    },
+    "footer":{
+      "createdBy":"Created By",
+      "createdByValue":"Abdul Rahim Ismail Nassif",
+      "createdDate":"Created Date",
+      "createdDateValue":"2024-01-01",
+      "createdTimeValue":"04:30 PM"
+
+    }
+
+
+}

@@ -1,0 +1,54 @@
+{
+  "number": "عرض الرقم",
+  "isUsed": "قيد الاستخدام",
+  "editNumber": "تعديل الرقم",
+  "cancelAppointment": "الغاء التعيين",
+  "customerInformation":{
+    "protocol": "اسم البروتوكول",
+    "protocolName":"protocolNameInArabic",
+    "country": "الدولة",
+    "countryName":"countryNameInArabic",
+    "customer": "العميل الحالي",
+    "companyName":"nameCompanyInArabic",
+    "numberOfSupplies":"عدد الامتدادات",
+    "numberOfSuppliesValue":"numberOfSupplies",
+    "dateOfLastShipment":"تاريخ اخر شحنة",
+    "dateOfLastShipmentValue":"dateOfLastShipment",
+    "currentBalance":"الرصيد الحالي",
+    "currentBalanceValue":"currentBalance",
+    "balanceUsed":"الرصيد المستخدم للعميل الحالي",
+    "balanceUsedValue":"balanceUsed",
+    "allBalanceUsed":"الرصيد المستخدم للرقم ككل",
+    "allBalanceUsedValue":"allBalanceUsed"
+
+
+  },
+  "customerTable": {
+    "customerTableHeader":{
+      "customerName":"العميل",
+      "appointmentDate":"تاريخ التعيين",
+      "endAppointmentDate":"تاريخ الغاء التعيين",
+      "responsibleName":"المسئول عن التعيين",
+      "localMinutes":"الدقائق المحلية",
+      "internationalMinutes":"الدقائق الدولية",
+      "amount":"المبلغ"
+    },
+    "customerTableBody":{
+      "customerName":"nameCompanyInArabic",
+      "responsibleName":"responsibleNameForAppointmentInArabic"
+    }
+  },
+"paginator":{
+      "show":"عرض",
+      "from":"من اصل"
+    },
+    "footer":{
+      "createdBy":"إنشاء بواسطة",
+      "createdByValue":"عبد الرحيم إسماعيل نصاف",
+      "createdDate":"تاريخ الإنشاء",
+      "createdDateValue":"01/01/2024",
+      "createdTimeValue":" 4:30 م"
+
+    }
+
+}

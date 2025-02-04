@@ -1,0 +1,82 @@
+/* // header */
+.header-class{
+  background-color: #FFFFFF;
+  height: 42px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border:1px solid #E4E4E4;
+
+}
+.header-inner-class{
+  margin-top:9px;
+  padding:0 16px;
+}
+.logo{
+  width: 24px;
+  height: 24px;
+  border-radius:4px;
+  background-color:#3E97FF1A;
+
+}
+.logo span{
+  color: #3E97FF;
+  font-size: 18px;
+  font-weight: 600;
+
+
+}
+.close-icon{
+  width: 20px;
+  height: 20px;
+  border-radius: 5.47px;
+  background-color: #F4F4F4;
+}
+.close-icon span{
+  color: #1C1C28;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+:hover.close-icon span{
+  color: red;
+}
+/* // customer number */
+.customer-section-class{
+  background-color: #FFFFFF;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ECF0F5;
+  margin: 8px ;
+}
+.customer-number-class{
+  height: 30px;
+  gap:12px
+}
+.customer-number-class p{
+  margin-bottom: 0;
+}
+.customer-number-class .number{
+  font-weight: 600;
+  font-size:20px;
+}
+.customer-number-class .is-used-class{
+  background-color: #48B29A;
+  color:#FFFFFF;
+  font-weight:500;
+  font-size:12px;
+  padding:6px 16px;
+  border-radius: 4px;
+}
+.number-icon-class p{
+  font-weight: 600;
+  font-size:20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in-out;
+
+}
+:hover.number-icon-class p{
+  color: #3E97FF;
+}
+
